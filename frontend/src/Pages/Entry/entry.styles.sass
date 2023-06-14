@@ -1,0 +1,13 @@
+@import '../../Assets/Sass/mixins'
+  
+.login__page,
+.signup__page,
+.forgot__password,
+.new__password
+  @include main-flex-container-column
+
+  > .login__page__container,
+  > .signup__page__container,
+  > .forgot__password__container,
+  > .new__password__container
+    @include main-flex-container-column

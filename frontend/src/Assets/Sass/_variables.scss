@@ -1,0 +1,158 @@
+$unit: (
+  '1': '0.25rem',
+  '2': '0.5rem',
+  '3': '0.75rem',
+  '4': '0.8125rem',
+  '5': '1rem',
+  '6': '1.25rem',
+  '7': '1.5rem',
+  '8': '1.75rem',
+  '9': '1.8125rem',
+  '10': '2rem',
+  '11': '2.25rem',
+  '12': '2.5rem',
+  '13': '2.75rem',
+  '14': '2.8125rem',
+  '15': '3rem',
+  '16': '3.25rem',
+  '17': '3.5rem',
+  '18': '3.75rem',
+  '19': '3.8125rem',
+  '20': '4rem',
+  '21': '4.25rem',
+  '22': '4.5rem',
+  '23': '4.75rem',
+  '24': '4.8125rem',
+  '25': '5rem'
+);
+
+$text-color-white-1: #ffffff;
+$text-color-black-1: #000000;
+$text-color-gray-1: #99a3a4;
+$text-color-red-1: #cb4335;
+$text-color-blue-1: #3498db;
+$text-color-green-1: #239b56;
+
+$text-color-main-1: #5dade2;
+
+$main-color-1: #5dade2;
+$main-color-1-shades: (
+  '1-darken-1': darken($main-color-1, 4%),
+  '1-darken-2': darken($main-color-1, 8%),
+  '1-darken-3': darken($main-color-1, 12%),
+  '1-darken-4': darken($main-color-1, 16%),
+  '1-darken-5': darken($main-color-1, 20%),
+  '1-lighten-1': lighten($main-color-1, 4%),
+  '1-lighten-2': lighten($main-color-1, 8%),
+  '1-lighten-3': lighten($main-color-1, 12%),
+  '1-lighten-4': lighten($main-color-1, 16%),
+  '1-lighten-5': lighten($main-color-1, 20%),
+);
+
+$background-color-white-1: #ffffff;
+$background-color-white-1-shades: (
+  '1-darken-1': darken($background-color-white-1, 4%),
+  '1-darken-2': darken($background-color-white-1, 8%),
+  '1-darken-3': darken($background-color-white-1, 12%),
+  '1-darken-4': darken($background-color-white-1, 16%),
+  '1-darken-5': darken($background-color-white-1, 20%),
+  '1-lighten-1': lighten($background-color-white-1, 4%),
+  '1-lighten-2': lighten($background-color-white-1, 8%),
+  '1-lighten-3': lighten($background-color-white-1, 12%),
+  '1-lighten-4': lighten($background-color-white-1, 16%),
+  '1-lighten-5': lighten($background-color-white-1, 20%),
+);
+
+$background-color-gray-1: #f2f4f4;
+$background-color-gray-1-shades: (
+  '1-darken-1': darken($background-color-gray-1, 4%),
+  '1-darken-2': darken($background-color-gray-1, 8%),
+  '1-darken-3': darken($background-color-gray-1, 12%),
+  '1-darken-4': darken($background-color-gray-1, 16%),
+  '1-darken-5': darken($background-color-gray-1, 20%),
+  '1-lighten-1': lighten($background-color-gray-1, 4%),
+  '1-lighten-2': lighten($background-color-gray-1, 8%),
+  '1-lighten-3': lighten($background-color-gray-1, 12%),
+  '1-lighten-4': lighten($background-color-gray-1, 16%),
+  '1-lighten-5': lighten($background-color-gray-1, 20%),
+);
+
+$background-color-red-1: #ec7063;
+$background-color-red-1-shades: (
+  '1-darken-1': darken($background-color-red-1, 4%),
+  '1-darken-2': darken($background-color-red-1, 8%),
+  '1-darken-3': darken($background-color-red-1, 12%),
+  '1-darken-4': darken($background-color-red-1, 16%),
+  '1-darken-5': darken($background-color-red-1, 20%),
+  '1-lighten-1': lighten($background-color-red-1, 4%),
+  '1-lighten-2': lighten($background-color-red-1, 8%),
+  '1-lighten-3': lighten($background-color-red-1, 12%),
+  '1-lighten-4': lighten($background-color-red-1, 16%),
+  '1-lighten-5': lighten($background-color-red-1, 20%),
+);
+
+$background-color-green-1: #58d68d;
+$background-color-green-1-shades: (
+  '1-darken-1': darken($background-color-green-1, 4%),
+  '1-darken-2': darken($background-color-green-1, 8%),
+  '1-darken-3': darken($background-color-green-1, 12%),
+  '1-darken-4': darken($background-color-green-1, 16%),
+  '1-darken-5': darken($background-color-green-1, 20%),
+  '1-lighten-1': lighten($background-color-green-1, 4%),
+  '1-lighten-2': lighten($background-color-green-1, 8%),
+  '1-lighten-3': lighten($background-color-green-1, 12%),
+  '1-lighten-4': lighten($background-color-green-1, 16%),
+  '1-lighten-5': lighten($background-color-green-1, 20%),
+);
+
+$background-color-black-1: #99a3a4;
+$background-color-black-1-shades: (
+  '1-darken-1': darken($background-color-black-1, 4%),
+  '1-darken-2': darken($background-color-black-1, 8%),
+  '1-darken-3': darken($background-color-black-1, 12%),
+  '1-darken-4': darken($background-color-black-1, 16%),
+  '1-darken-5': darken($background-color-black-1, 20%),
+  '1-lighten-1': lighten($background-color-black-1, 4%),
+  '1-lighten-2': lighten($background-color-black-1, 8%),
+  '1-lighten-3': lighten($background-color-black-1, 12%),
+  '1-lighten-4': lighten($background-color-black-1, 16%),
+  '1-lighten-5': lighten($background-color-black-1, 20%),
+);
+
+$background-color-black-2: #424949;
+$background-color-black-2-shades: (
+  '2-darken-1': darken($background-color-black-2, 4%),
+  '2-darken-2': darken($background-color-black-2, 8%),
+  '2-darken-3': darken($background-color-black-2, 12%),
+  '2-darken-4': darken($background-color-black-2, 16%),
+  '2-darken-5': darken($background-color-black-2, 20%),
+  '2-lighten-1': lighten($background-color-black-2, 4%),
+  '2-lighten-2': lighten($background-color-black-2, 8%),
+  '2-lighten-3': lighten($background-color-black-2, 12%),
+  '2-lighten-4': lighten($background-color-black-2, 16%),
+  '2-lighten-5': lighten($background-color-black-2, 20%),
+);
+
+$background-color-white-transparent-1-shades: (
+  '1-opacity-1': rgba(255, 255, 255, 0.1),
+  '1-opacity-2': rgba(255, 255, 255, 0.2),
+  '1-opacity-3': rgba(255, 255, 255, 0.3),
+  '1-opacity-4': rgba(255, 255, 255, 0.4),
+  '1-opacity-5': rgba(255, 255, 255, 0.5),
+  '1-opacity-6': rgba(255, 255, 255, 0.6),
+  '1-opacity-7': rgba(255, 255, 255, 0.7),
+  '1-opacity-8': rgba(255, 255, 255, 0.8),
+  '1-opacity-9': rgba(255, 255, 255, 0.9),
+);
+
+$background-color-black-transparent-1-shades: (
+  '1-opacity-1': rgba(0, 0, 0, 0.1),
+  '1-opacity-2': rgba(0, 0, 0, 0.2),
+  '1-opacity-3': rgba(0, 0, 0, 0.3),
+  '1-opacity-4': rgba(0, 0, 0, 0.4),
+  '1-opacity-5': rgba(0, 0, 0, 0.5),
+  '1-opacity-6': rgba(0, 0, 0, 0.6),
+  '1-opacity-7': rgba(0, 0, 0, 0.7),
+  '1-opacity-8': rgba(0, 0, 0, 0.8),
+  '1-opacity-9': rgba(0, 0, 0, 0.9),
+);

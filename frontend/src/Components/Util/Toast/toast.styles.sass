@@ -1,0 +1,95 @@
+.util__toast__component
+  position: fixed
+  display: flex
+  flex:
+    flow: column nowrap
+  max-width: 40rem
+  left: 0
+  right: 0
+  bottom: 1rem
+  margin: 0 auto
+  border: 2px solid transparent
+    radius: var(--unit-2)
+  box-shadow: 0 0 2rem var(--background-color-black-1)
+  animation: slideUp 100ms forwards
+
+  @keyframes slideUp
+    from
+      bottom: -30rem
+
+    to
+      bottom: 1rem
+
+  &:hover
+    > .util__toast__progress__bar__component
+      > .util__toast__progress__bar__component__container
+        > .progress__bar
+            animation-play-state: paused
+
+  &.default
+    color: var(--text-color-white-1)
+    background:
+      color: var(--background-color-black-2)
+
+  &.error
+    background:
+      color: var(--background-color-red-1-lighten-5)
+
+    > .util__toast__component__container
+      > .util__toast__message
+        color: var(--text-color-red-1)
+
+  &.success
+    background:
+      color: var(--background-color-green-1-lighten-5)
+
+    > .util__toast__component__container
+      > .util__toast__message
+        color: var(--text-color-green-1)
+
+  > .util__toast__component__container
+    display: flex
+    flex:
+      flow: row nowrap
+
+    > .util__toast__content
+      flex: 1 0
+      padding: var(--unit-7)
+
+    > .util__toast__close__button
+      display: flex
+      flex: 0 0 var(--unit-18)
+      justify-content: center
+      align-items: center
+      border:
+        radius: var(--unit-2)
+      font:
+        size: 1.25rem
+      cursor: pointer
+
+      &:hover
+        background: var(--background-color-black-2-lighten-2)
+
+  > .util__toast__progress__bar__component
+    position: absolute
+    width: 100%
+    height: 5px
+    left: 0
+    bottom: -2px
+    
+    > .util__toast__progress__bar__component__container
+      > .progress__bar
+        position: absolute
+        height: 5px
+        border:
+          radius: var(--unit-2)
+        background:
+          color: var(--background-color-white-1)
+        animation: growWidth 5s forwards
+
+        @keyframes growWidth
+          from
+            width: 0%
+
+          to
+            width: 100%

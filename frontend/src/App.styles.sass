@@ -1,0 +1,11 @@
+@import './Assets/Sass/mixins'
+  
+#App
+  @include root-flex-container-column
+
+  &.logged--out
+    > .app__container
+      position: relative
+      display: flex
+      min-height: 100vh
+      height: 100%

@@ -1,0 +1,114 @@
+@import './Assets/Sass/mixins'
+@import './Assets/Sass/variables'
+
+:root
+  @each $key, $value in $unit
+    --unit-#{ $key }: #{ $value }
+
+  --text-color-white-1: #{ $text-color-white-1 }
+  --text-color-black-1: #{ $text-color-black-1 }
+  --text-color-gray-1: #{ $text-color-gray-1 }
+  --text-color-red-1: #{ $text-color-red-1 }
+  --text-color-blue-1: #{ $text-color-blue-1 }
+  --text-color-green-1: #{ $text-color-green-1 }
+
+  --text-color-main-1: #{ $text-color-main-1 }
+
+  --main-color-1: #{ $main-color-1 }
+  @each $key, $value in $main-color-1-shades
+    --main-color-#{ $key }: #{ $value }
+
+  --background-color-white-1: #{ $background-color-white-1 }
+  @each $key, $value in $background-color-white-1-shades
+    --background-color-white-#{ $key }: #{ $value }
+
+  --background-color-gray-1: #{ $background-color-gray-1 }
+  @each $key, $value in $background-color-gray-1-shades
+    --background-color-gray-#{ $key }: #{ $value }
+
+  --background-color-red-1: #{ $background-color-red-1 }
+  @each $key, $value in $background-color-red-1-shades
+    --background-color-red-#{ $key }: #{ $value }
+
+  --background-color-green-1: #{ $background-color-green-1 }
+  @each $key, $value in $background-color-green-1-shades
+    --background-color-green-#{ $key }: #{ $value }
+
+  --background-color-black-1: #{ $background-color-black-1 }
+  @each $key, $value in $background-color-black-1-shades
+    --background-color-black-#{ $key }: #{ $value }
+
+  --background-color-black-2: #{ $background-color-black-2 }
+  @each $key, $value in $background-color-black-2-shades
+    --background-color-black-#{ $key }: #{ $value }
+
+  @each $key, $value in $background-color-white-transparent-1-shades
+    --background-color-white-transparent-#{ $key }: #{ $value }
+
+  @each $key, $value in $background-color-black-transparent-1-shades
+    --background-color-black-transparent-#{ $key }: #{ $value }
+
+*, ::before, ::after
+  margin: 0
+  padding: 0
+  border: none
+  outline: none
+  font:
+    family: inherit
+  box-sizing: border-box
+
+html, body
+  font:
+    size: 16px
+    family: 'Roboto', sans-serif
+  background:
+    color: var(--background-color-gray-1)
+
+html, body, #root
+  @include root-flex-container-column
+
+a
+  text:
+    decoration: none
+  color: var(--text-color-main-1)
+
+  &:hover
+    text:
+      decoration: underline
+
+input
+  font:
+    size: 1rem
+    family: 'Roboto', sans-serif
+
+button
+  font:
+    size: 1rem
+  cursor: pointer
+
+  &[disabled]
+    cursor: not-allowed
+
+h1
+  font:
+    size: 3rem
+
+h2
+  font:
+    size: 2.8125rem
+
+h3
+  font:
+    size: 2.5rem
+
+h4
+  font:
+    size: 2rem
+
+h5
+  font:
+    size: 1.8125rem
+
+h6
+  font:
+    size: 1.5rem

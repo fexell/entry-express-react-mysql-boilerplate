@@ -1,0 +1,143 @@
+@import '../../Assets/Sass/mixins'
+  
+.entry__component
+  @include flex-container-column
+
+  > .entry__component__container
+    @include flex-container-row
+
+    > .entry__left__component,
+    > .entry__right__component
+      flex: 1 0 50%
+
+    > .entry__left__component
+      min-height: 100vh
+      max-height: 100vh
+      height: 100%
+      overflow-y: auto
+      background:
+        color: var(--background-color-white-1)
+
+      > .entry__left__component__container
+        @include flex-container-column
+        justify-content: center
+        align-items: center
+
+        > .form__component
+          min-width: 30rem
+          max-width: 100%
+
+          @media screen and (max-width: 48rem)
+            min-width: 95%
+
+          > .form__component__container
+            position: relative
+
+            > .form
+              position: relative
+
+              > .form__container
+                position: relative
+
+                > .form__input__component
+                  position: relative
+
+                  > .form__input__component__container
+                    position: relative
+
+                    > .form__input__wrapper
+                      position: relative
+
+                      > .form__input__wrapper__container
+                        position: relative
+
+                        > .form__input__icon
+                          position: absolute
+                          height: 100%
+                          min-width: var(--unit-15)
+                          max-width: var(--unit-15)
+
+                          > .form__input__icon__container
+                            @include flex-container-column
+                            justify-content: center
+                            align-items: center
+
+                        > .input__container
+                          > .input
+                            display: block
+                            width: 100%
+                            padding: var(--unit-4)
+                            border: 2px solid var(--background-color-gray-1)
+                              radius: var(--unit-2)
+
+                            &:focus
+                              border:
+                                color: var(--main-color-1)
+                              background:
+                                color: var(--background-color-gray-1)
+
+                > .form__button__component
+                  > .form__button__component__container
+                    > .button
+                      display: block
+                      width: 100%
+                      padding: var(--unit-4)
+                      border: 2px solid transparent
+                        radius: var(--unit-2)
+                      font:
+                        size: 1rem
+                      background:
+                        color: var(--background-color-gray-1)
+
+                      &:not([disabled])
+                        color: var(--text-color-white-1)
+                        background:
+                          color: var(--main-color-1)
+
+                        &:hover
+                          border:
+                            color: var(--main-color-1-darken-1)
+                          background:
+                            color: var(--main-color-1-darken-1)
+
+                        &:active
+                          border:
+                            color: var(--main-color-1-darken-2)
+                          background:
+                            color: var(--main-color-1-darken-2)
+
+                > .entry__left__additional
+                  padding: var(--unit-6) 0
+
+                  > .entry__left__additional__container
+                    position: relative
+                    display: flex
+                    flex:
+                      flow: row nowrap
+
+                    > .entry__left__additional__left,
+                    > .entry__left__additional__right
+                      flex: 1 0 50%
+
+                    > .entry__left__additional__left
+                      > .entry__left__additional__left__container
+                        > .label
+                          margin:
+                            left: var(--unit-2)
+
+                    > .entry__left__additional__right
+                      > .entry__left__additional__right__container
+                        display: flex
+                        justify-content: flex-end
+
+                > .entry__left__entry__link
+                  padding: var(--unit-8) 0 0 0
+
+                  > .entry__left__entry__link__container
+                    text:
+                      align: center
+                    color: var(--text-color-gray-1)
+
+    > .entry__right__component
+      @media screen and (max-width: 62rem)
+        display: none
